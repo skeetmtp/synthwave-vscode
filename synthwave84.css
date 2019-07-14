@@ -36,6 +36,37 @@
   background: transparent;
 }
 
+/* Rainbow background */
+.monaco-editor-background {
+  background-color: transparent !important;
+  background-image: linear-gradient(to bottom, #420505, #050d3d); 
+  background-image: linear-gradient(to bottom, #ff0000, #ffee00, #18ff00, #00ffeb, #0027ff, #8d00ff, #ff009b, #ff0000, #ff0000); 
+  background-size: auto 50vh;
+  background-repeat: repeat;
+	-webkit-animation: Gradient 50s linear infinite;
+	-moz-animation: Gradient 50s linear infinite;
+  animation: Gradient 50s linear infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 1%}
+  100%{background-position:0% 0%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 1%}
+  100%{background-position:0% 0%}
+}
+@keyframes Gradient { 
+  0%{background-position:0% 0%}
+  50%{background-position:100% 1%}
+  100%{background-position:0% 0%}
+}
+
+
+
 /* Add the subtle gradient to the editor background */
 .monaco-editor {
   background-color: transparent !important;
